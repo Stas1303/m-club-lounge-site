@@ -205,7 +205,12 @@ footer{padding:64px 0 44px;border-top:1px solid var(--line)}
 .socials a:hover .ico{stroke:#1c0a05}
 .disclaimer{font-size:11.5px;color:#6b4f4a;margin-top:30px;text-align:center;line-height:1.6}
 
-.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.8,.2,1)}
-.reveal.in{opacity:1;transform:none}
+/* Pure-CSS fade-in: plays once on load, always ends visible.
+   No JS / no IntersectionObserver dependency, so content can never stay hidden. */
+@keyframes revealUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.reveal{animation:revealUp .7s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion: reduce){
+  .reveal{animation:none}
+}
 </content>
 </invoke>
