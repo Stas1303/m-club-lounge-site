@@ -9,9 +9,9 @@
 <meta name="description" content="Меню М Клаб Лаунж: авторские кальяны, китайский чай, домашние лимонады, кухня и мангал. Актуальные цены.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>document.documentElement.className="js";</script>
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -41,24 +41,11 @@
 <section style="padding-top:0">
   <div class="wrap">
 
-    <div class="filter reveal">
-      <button class="chip active" data-f="all">Всё</button>
-      <button class="chip" data-f="hookah">Кальяны</button>
-      <button class="chip" data-f="tea">Чай</button>
-      <button class="chip" data-f="notea">Авторский чай</button>
-      <button class="chip" data-f="lemonade">Лимонады</button>
-      <button class="chip" data-f="soft">Напитки</button>
-      <button class="chip" data-f="coffee">Кофе</button>
-      <button class="chip" data-f="grill">Мангал</button>
-      <button class="chip" data-f="mains">Кухня</button>
-      <button class="chip" data-f="snacks">Закуски</button>
-      <button class="chip" data-f="dessert">Десерты</button>
-    </div>
+    <div class="acc reveal" id="catalog">
 
-    <div id="catalog">
-
-      <div class="cat-block reveal" data-cat="hookah">
-        <div class="cat-title"><h3>Кальяны</h3><span class="ln"></span><span class="cnt">6</span></div>
+      <div class="acc-item open" data-cat="hookah">
+        <button class="acc-head" type="button"><span class="h-name">Кальяны</span><span class="h-cnt">6</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Кальянный сет</span><span class="desc">3 разных вкуса, замена чаш каждые 30–40 минут</span></div><span class="price">2 200 ₽</span></div>
           <div class="item"><div><span class="name">Кальян на питахайе</span><span class="desc">На свежем фрукте</span></div><span class="price">3 500 ₽</span></div>
@@ -66,11 +53,13 @@
           <div class="item"><div><span class="name">Кальян на грейпфруте</span><span class="desc">На свежем фрукте</span></div><span class="price">2 500 ₽</span></div>
           <div class="item"><div><span class="name">С сигарным табаком</span><span class="desc">Крепкая подача</span></div><span class="price">2 200 ₽</span></div>
           <div class="item"><div><span class="name">Кальян классический</span><span class="desc">Один вкус на выбор</span></div><span class="price">2 000 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="tea">
-        <div class="cat-title"><h3>Чай</h3><span class="ln"></span><span class="cnt">20</span></div>
+      <div class="acc-item" data-cat="tea">
+        <button class="acc-head" type="button"><span class="h-name">Чай</span><span class="h-cnt">20</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Жасминовый цветок</span><span class="desc">Белый</span></div><span class="price">850 ₽</span></div>
           <div class="item"><div><span class="name">Да Хун Пао</span><span class="desc">Улун</span></div><span class="price">790 ₽</span></div>
@@ -92,11 +81,13 @@
           <div class="item"><div><span class="name">Эрл Грей</span><span class="desc">Чёрный</span></div><span class="price">650 ₽</span></div>
           <div class="item"><div><span class="name">Высокогорный</span><span class="desc">Травяной</span></div><span class="price">650 ₽</span></div>
           <div class="item"><div><span class="name">Ку Цяо</span><span class="desc">Гречишный</span></div><span class="price">650 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="notea">
-        <div class="cat-title"><h3>Авторский чай</h3><span class="ln"></span><span class="cnt">9</span></div>
+      <div class="acc-item" data-cat="notea">
+        <button class="acc-head" type="button"><span class="h-name">Авторский чай</span><span class="h-cnt">9</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Вишнёвый с розовым грейпфрутом</span></div><span class="price">800 ₽</span></div>
           <div class="item"><div><span class="name">Имбирный с малиной</span></div><span class="price">800 ₽</span></div>
@@ -107,11 +98,13 @@
           <div class="item"><div><span class="name">Тропический с манго</span></div><span class="price">800 ₽</span></div>
           <div class="item"><div><span class="name">Согревающий</span></div><span class="price">800 ₽</span></div>
           <div class="item"><div><span class="name">Ягодный</span></div><span class="price">800 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="lemonade">
-        <div class="cat-title"><h3>Лимонады</h3><span class="ln"></span><span class="cnt">9</span></div>
+      <div class="acc-item" data-cat="lemonade">
+        <button class="acc-head" type="button"><span class="h-name">Лимонады</span><span class="h-cnt">9</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Клубника с лемонграссом</span><span class="desc">Бокал / графин</span></div><span class="price">450 / 900 ₽</span></div>
           <div class="item"><div><span class="name">Щавель с ананасом</span><span class="desc">Бокал / графин</span></div><span class="price">450 / 900 ₽</span></div>
@@ -122,11 +115,13 @@
           <div class="item"><div><span class="name">Фруктовый</span><span class="desc">Бокал / графин</span></div><span class="price">450 / 900 ₽</span></div>
           <div class="item"><div><span class="name">Мохито</span><span class="desc">Бокал / графин</span></div><span class="price">450 / 900 ₽</span></div>
           <div class="item"><div><span class="name">Ягодный</span><span class="desc">Бокал / графин</span></div><span class="price">450 / 900 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="soft">
-        <div class="cat-title"><h3>Напитки</h3><span class="ln"></span><span class="cnt">10</span></div>
+      <div class="acc-item" data-cat="soft">
+        <button class="acc-head" type="button"><span class="h-name">Напитки</span><span class="h-cnt">10</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Coca-Cola</span></div><span class="price">350 ₽</span></div>
           <div class="item"><div><span class="name">Coca-Cola Zero</span></div><span class="price">350 ₽</span></div>
@@ -138,11 +133,13 @@
           <div class="item"><div><span class="name">Red Bull</span></div><span class="price">400 ₽</span></div>
           <div class="item"><div><span class="name">Вода RusseQuelle 250 мл</span><span class="desc">Газ. / негаз.</span></div><span class="price">300 ₽</span></div>
           <div class="item"><div><span class="name">Вода RusseQuelle 750 мл</span><span class="desc">Газ. / негаз.</span></div><span class="price">550 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="coffee">
-        <div class="cat-title"><h3>Кофе</h3><span class="ln"></span><span class="cnt">6</span></div>
+      <div class="acc-item" data-cat="coffee">
+        <button class="acc-head" type="button"><span class="h-name">Кофе</span><span class="h-cnt">6</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Эспрессо</span></div><span class="price">250 ₽</span></div>
           <div class="item"><div><span class="name">Американо</span></div><span class="price">300 ₽</span></div>
@@ -150,11 +147,13 @@
           <div class="item"><div><span class="name">Латте</span></div><span class="price">400 ₽</span></div>
           <div class="item"><div><span class="name">Айс-латте</span></div><span class="price">400 ₽</span></div>
           <div class="item"><div><span class="name">Горячий шоколад</span></div><span class="price">400 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="grill">
-        <div class="cat-title"><h3>Мангал</h3><span class="ln"></span><span class="cnt">7</span></div>
+      <div class="acc-item" data-cat="grill">
+        <button class="acc-head" type="button"><span class="h-name">Мангал</span><span class="h-cnt">7</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Рёбрышки барбекю</span></div><span class="price">1 490 ₽</span></div>
           <div class="item"><div><span class="name">Баранья мякоть</span></div><span class="price">1 490 ₽</span></div>
@@ -163,11 +162,13 @@
           <div class="item"><div><span class="name">Свиная шейка</span></div><span class="price">890 ₽</span></div>
           <div class="item"><div><span class="name">Куриная грудка</span></div><span class="price">750 ₽</span></div>
           <div class="item"><div><span class="name">Овощное ассорти</span></div><span class="price">590 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="mains">
-        <div class="cat-title"><h3>Кухня</h3><span class="ln"></span><span class="cnt">10</span></div>
+      <div class="acc-item" data-cat="mains">
+        <button class="acc-head" type="button"><span class="h-name">Кухня</span><span class="h-cnt">10</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Стейк форели с овощами</span><span class="desc">Отварные овощи</span></div><span class="price">1 190 ₽</span></div>
           <div class="item"><div><span class="name">Спагетти с каракатицей и креветками</span><span class="desc">В томатном соусе</span></div><span class="price">990 ₽</span></div>
@@ -179,11 +180,13 @@
           <div class="item"><div><span class="name">Люля-кебаб с рисом</span></div><span class="price">690 ₽</span></div>
           <div class="item"><div><span class="name">Паста с курицей и грибами</span></div><span class="price">650 ₽</span></div>
           <div class="item"><div><span class="name">Крем-суп грибной</span></div><span class="price">490 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="snacks">
-        <div class="cat-title"><h3>Закуски</h3><span class="ln"></span><span class="cnt">12</span></div>
+      <div class="acc-item" data-cat="snacks">
+        <button class="acc-head" type="button"><span class="h-name">Закуски</span><span class="h-cnt">12</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Салат с хрустящими баклажанами</span></div><span class="price">850 ₽</span></div>
           <div class="item"><div><span class="name">Цезарь с курицей</span></div><span class="price">750 ₽</span></div>
@@ -197,15 +200,18 @@
           <div class="item"><div><span class="name">Финики</span></div><span class="price">300 ₽</span></div>
           <div class="item"><div><span class="name">Солёный арахис</span></div><span class="price">250 ₽</span></div>
           <div class="item"><div><span class="name">Соус</span></div><span class="price">50 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
-      <div class="cat-block reveal" data-cat="dessert">
-        <div class="cat-title"><h3>Десерты</h3><span class="ln"></span><span class="cnt">2</span></div>
+      <div class="acc-item" data-cat="dessert">
+        <button class="acc-head" type="button"><span class="h-name">Десерты</span><span class="h-cnt">2</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="acc-body"><div class="acc-inner">
         <div class="price-list">
           <div class="item"><div><span class="name">Торт «Брауни»</span></div><span class="price">490 ₽</span></div>
           <div class="item"><div><span class="name">Яблочный штрудель</span></div><span class="price">490 ₽</span></div>
-        </div>
+        </div></div>
+      </div>
       </div>
 
     </div>
@@ -246,6 +252,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>
