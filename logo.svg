@@ -1,0 +1,24 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="М Клаб Лаунж">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="20" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e7cd9b"/>
+      <stop offset="0.5" stop-color="#c9a35e"/>
+      <stop offset="1" stop-color="#9c7838"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="116" height="116" rx="28" fill="#4a1519"/>
+  <g stroke="url(#gold)" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left outer stem with inward serif foot -->
+    <path d="M28 40 V84 C28 92 33 95 38 92"/>
+    <!-- left inner curve sweeping up to centre peak -->
+    <path d="M28 46 C28 38 36 36 42 44 C50 54 56 60 60 70"/>
+    <!-- right outer stem with inward serif foot -->
+    <path d="M92 40 V84 C92 92 87 95 82 92"/>
+    <!-- right inner curve sweeping up to centre peak -->
+    <path d="M92 46 C92 38 84 36 78 44 C70 54 64 60 60 70"/>
+    <!-- centre teardrop loop -->
+    <path d="M60 70 C54 78 54 90 60 94 C66 90 66 78 60 70 Z"/>
+  </g>
+  <!-- diamond sparkle in the centre -->
+  <path d="M60 34 L66 52 L60 60 L54 52 Z" fill="url(#gold)"/>
+</svg>
